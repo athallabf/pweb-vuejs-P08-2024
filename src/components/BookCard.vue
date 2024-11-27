@@ -11,6 +11,7 @@ export interface BookObject {
   initialQty: number;
   qty: number;
   publisher: string;
+  coverImage: string;
 }
 
 export default {
@@ -35,7 +36,7 @@ export default {
 <template>
   <div class="border border-black rounded-xl px-6 pt-6 pb-8">
     <img
-      src="https://placehold.co/300x200"
+      :src="book.coverImage || 'https://placehold.co/300x200'"
       alt="Wajib Pake Typescript hehe"
       class="rounded-xl mb-4 w-full"
     />

@@ -41,7 +41,7 @@ export default {
 <template>
   <main class="h-full bg-white">
     <!-- Hero Section -->
-    <section class="hero min-h-screen bg-blue-500 text-white py-16 text-center px-[100px] py-[36px]">
+    <section class="hero min-h-screen bg-beige text-white text-center px-[100px] py-[36px] flex flex-col justify-center items-center">
       <h1 class="text-4xl font-bold">Welcome to Book Gallery App P8</h1>
       <p class="text-lg mt-4">Discover amazing books from various authors!</p>
       <button class="mt-6 px-4 py-2 bg-white text-blue-500 font-semibold rounded shadow">
