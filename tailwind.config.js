@@ -4,7 +4,14 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   // notes: sesuaikan file path dengan kebutuhan kalian dan pastikan file path-nya benar
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        navy: "#2F4156",
+        teal: "#567C8D",
+        sky: "#C8D9E6",
+        beige: "#F5EFEB",
+        },
+    },
   },
   plugins: [],
 };
