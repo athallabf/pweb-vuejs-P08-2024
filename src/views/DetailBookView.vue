@@ -88,7 +88,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="py-9 px-25 bg-beige">
+  <main class="py-5 px-5 bg-beige">
     <RouterLink
       to="/"
       class="px-4 text-beige py-2 lg:ml-24 bg-teal font-semibold rounded-md inline-block"
@@ -99,8 +99,8 @@ export default defineComponent({
     </div>
 
     <div v-else-if="bookDetail.title" class="mt-8">
-      <div class="flex lg:ml-24 gap-x-10 flex-col lg:flex-row">
-        <div class="w-full md:w-4/6 lg:w-[500px] lg:flex-shrink-0">
+      <div class="flex lg:ml-24 gap-x-10 flex-col lg:flex-row justify-center items-center">
+        <div class="w-3/4 md:w-4/6 lg:w-[500px] lg:flex-shrink-0">
           <img
             :src="bookDetail.coverImage"
             class="rounded-xl w-full"

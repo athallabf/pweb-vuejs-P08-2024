@@ -41,10 +41,10 @@ export default {
 <template>
   <main class="h-full bg-white">
     <!-- Hero Section -->
-    <section class="hero min-h-screen bg-beige text-white text-center px-[100px] py-[36px] flex flex-col justify-center items-center">
-      <div class="w-[700px] h-fit flex flex-col">
-        <h1 class="text-6xl font-bold text-teal">Find Your Next Books</h1>
-        <p class="text-md mt-4 text-teal">Discover your next favorite read! Whether you're into the latest bestsellers, timeless classics, or niche genres, we have a wide selection of books to suit every taste. Start your journey today and explore our collection of handpicked titles.</p>
+    <section class="hero min-h-screen bg-beige text-white text-center px-5 py-5 md:px-[100px] md:py-[36px] flex flex-col justify-center items-center">
+      <div class="w-full md:w-2/3 h-fit flex flex-col">
+        <h1 class="text-4xl md:text-6xl font-bold text-teal">Find Your Next Books</h1>
+        <p class="text-sm md:text-md mt-4 text-teal">Discover your next favorite read! Whether you're into the latest bestsellers, timeless classics, or niche genres, we have a wide selection of books to suit every taste. Start your journey today and explore our collection of handpicked titles.</p>
       </div>
       
       <a
