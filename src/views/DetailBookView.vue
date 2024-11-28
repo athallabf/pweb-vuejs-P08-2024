@@ -88,11 +88,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="mt-14 mx-8 pb-14">
+  <main class="py-9 px-25 bg-beige">
     <RouterLink
       to="/"
-      class="px-4 text-white py-2 lg:ml-24 bg-blue-400 font-semibold rounded-xl inline-block"
-      >⬅️ {{!!bookDetail.title}}</RouterLink
+      class="px-4 text-beige py-2 lg:ml-24 bg-teal font-semibold rounded-md inline-block"
+      > Back to Home </RouterLink
     >
     <div v-if="fetchError" class="mt-8">
       <h1 class="font-bold text-3xl text-center">Failed to load book data</h1>
@@ -108,34 +108,34 @@ export default defineComponent({
           />
         </div>
         <div class="mt-10 lg:mt-0 lg:pr-24">
-          <h1 class="font-bold text-xl md:text-2xl lg:text-3xl text-left">
-            Buku {{ bookDetail.title }} by {{ bookDetail.author }}
+          <h1 class="font-bold text-xl md:text-2xl lg:text-3xl text-left text-teal">
+            {{ bookDetail.title }} by {{ bookDetail.author }}
           </h1>
           <h5 class="text-sm text-gray-500 font-bold mt-2">
             {{ bookDetail.rating.average }} {{ starRating }} ({{
               bookDetail.rating.count
             }})
           </h5>
-          <hr class="border border-black my-2" />
-          <h3 class="text-md md:text-lg text-left">
+          <hr class="border border-teal my-2" />
+          <h3 class="text-md md:text-lg text-left text-teal">
             <span class="font-bold">About:</span> {{ bookDetail.description }}
           </h3>
-          <h3 class="text-md md:text-lg text-left">
+          <h3 class="text-md md:text-lg text-left text-teal">
             <span class="font-bold">Published:</span>
             {{ bookDetail.publishedDate }} by
             {{ bookDetail.publisher }}
           </h3>
-          <h3 class="text-md md:text-lg text-left">
+          <h3 class="text-md md:text-lg text-left text-teal">
             <span class="font-bold">Category:</span>
             {{ bookDetail.tags.join(", ") }}
           </h3>
-          <h3 class="text-md md:text-lg text-left">
+          <h3 class="text-md md:text-lg text-left text-teal">
             <span class="font-bold">Stock:</span>
             {{ bookDetail.qty }} of {{ bookDetail.initialQty }} books
           </h3>
         </div>
       </div>
-      <div class="lg:ml-24 flex justify-center items-center">
+      <div class="flex justify-center items-center">
         <button
           @click="deleteBook"
           class="px-4 text-white py-2 w-1/2 bg-red-400 font-semibold rounded-xl mt-8 inline-block"

@@ -25,13 +25,13 @@ export default defineComponent({
 </script>
 
 <template>
-  <nav class="bg-gray-800 p-4">
+  <nav class="bg-navy p-4">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-4">
-        <h3 class="text-white font-bold">Book App PWEB A | P8 </h3>
+        <h3 class="text-beige font-bold">Book App PWEB A | P8 </h3>
       </div>
       <div class="md:hidden">
-        <button @click="toggleMenu" class="text-white focus:outline-none">
+        <button @click="toggleMenu" class="text-beige focus:outline-none">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -50,7 +50,7 @@ export default defineComponent({
       </div>
       <div class="hidden md:flex items-center space-x-4">
         <RouterLink to="/" class="text-white">Home</RouterLink>
-        <RouterLink to="/add-book" class="text-white">Add New Book</RouterLink>
+        <RouterLink to="/add-book" class="text-beige">Add New Book</RouterLink>
       </div>
     </div>
   </nav>
@@ -60,11 +60,11 @@ export default defineComponent({
       'translate-x-full': !isMenuOpen,
       'translate-x-0': isMenuOpen,
     }"
-    class="fixed top-0 right-0 h-full w-64 bg-gray-800 text-white transform transition-transform duration-300 ease-in-out md:hidden"
+    class="fixed top-0 right-0 h-full w-64 bg-navy text-beige transform transition-transform duration-300 ease-in-out md:hidden"
   >
     <button
       @click="closeMenu"
-      class="absolute top-4 right-4 text-white focus:outline-none"
+      class="absolute top-4 right-4 text-beige focus:outline-none"
     >
       <svg
         class="w-6 h-6"

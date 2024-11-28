@@ -42,25 +42,22 @@ export default {
   <main class="h-full bg-white">
     <!-- Hero Section -->
     <section class="hero min-h-screen bg-beige text-white text-center px-[100px] py-[36px] flex flex-col justify-center items-center">
-      <h1 class="text-4xl font-bold">Welcome to Book Gallery App P8</h1>
-      <p class="text-lg mt-4">Discover amazing books from various authors!</p>
-      <button class="mt-6 px-4 py-2 bg-white text-blue-500 font-semibold rounded shadow">
-        Explore Now
-      </button>
-    </section>
-
-    <!-- About Section -->
-    <section class="about min-h-screen bg-gray-100 py-16 px-4">
-      <h2 class="text-3xl font-bold text-center">About Us</h2>
-      <p class="text-center text-lg mt-4">
-        We are passionate about books and aim to provide the best collection for
-        book lovers everywhere.
-      </p>
+      <div class="w-[700px] h-fit flex flex-col">
+        <h1 class="text-6xl font-bold text-teal">Find Your Next Books</h1>
+        <p class="text-md mt-4 text-teal">Discover your next favorite read! Whether you're into the latest bestsellers, timeless classics, or niche genres, we have a wide selection of books to suit every taste. Start your journey today and explore our collection of handpicked titles.</p>
+      </div>
+      
+      <a
+        href="#books"
+        class="mt-6 px-4 py-2 bg-teal text-beige font-semibold rounded shadow"
+      >
+        Discover Now
+      </a>
     </section>
 
     <!-- Books Section -->
-    <section class="books min-h-screen mt-10 px-4">
-      <h2 class="text-3xl font-bold text-center text-black">Our Book Collection</h2>
+    <section id="books" class="min-h-screen py-10 px-4 bg-sky">
+      <h2 class="text-4xl font-bold text-center text-navy">Best Seller</h2>
       <div class="flex flex-wrap justify-center gap-4 mt-10">
         <BookCard
           v-if="booksData.length"
@@ -80,7 +77,7 @@ export default {
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer bg-blue-500 text-white py-4 text-center">
+    <footer class="footer bg-navy text-beige py-4 text-center">
       <p>&copy; 2024 Book Gallery App P8. All rights reserved.</p>
     </footer>
   </main>

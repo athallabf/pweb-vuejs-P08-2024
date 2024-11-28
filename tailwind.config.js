@@ -11,6 +11,10 @@ export default {
         sky: "#C8D9E6",
         beige: "#F5EFEB",
         },
+        fontFamily: {
+          DEFAULT: ["Poppins", "sans-serif"],
+          playfair: ["Playfair Display", "serif"],
+        },
     },
   },
   plugins: [],
