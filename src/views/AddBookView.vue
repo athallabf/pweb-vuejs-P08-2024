@@ -80,11 +80,12 @@ export default defineComponent({
           >Title</label
         >
         <input
+          text-black
           v-model="title"
           id="title"
           type="text"
           placeholder="Tintin di Tibet"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -97,7 +98,7 @@ export default defineComponent({
           id="author"
           type="text"
           placeholder="Hergé"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -109,7 +110,7 @@ export default defineComponent({
           v-model="publishedDate"
           id="publishedDate"
           type="date"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -122,7 +123,7 @@ export default defineComponent({
           id="publisher"
           type="text"
           placeholder="Gramedia"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -134,7 +135,7 @@ export default defineComponent({
           v-model="description"
           id="description"
           placeholder="Kisah petualangan Tintin di Tibet"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         ></textarea>
       </div>
@@ -147,7 +148,7 @@ export default defineComponent({
           id="coverImage"
           type="url"
           placeholder="https://placehold.co/300x200"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -160,7 +161,7 @@ export default defineComponent({
           id="ratingAverage"
           type="number"
           step="0.1"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -172,7 +173,7 @@ export default defineComponent({
           v-model="ratingCount"
           id="ratingCount"
           type="number"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -185,7 +186,7 @@ export default defineComponent({
           id="tags"
           type="text"
           placeholder="Adventure, Fiction, Mystery"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -197,7 +198,7 @@ export default defineComponent({
           v-model="initialQty"
           id="initialQty"
           type="number"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-gray-700"
           required
         />
       </div>
@@ -209,7 +210,7 @@ export default defineComponent({
           v-model="qty"
           id="qty"
           type="number"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="w-full px-3 py-2 border rounded-lg text-black"
           required
         />
       </div>
